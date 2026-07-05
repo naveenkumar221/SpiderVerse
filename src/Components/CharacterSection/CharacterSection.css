@@ -1,0 +1,56 @@
+.characters{
+    padding:100px 6%;
+    background:#090909;
+}
+
+.characters h1{
+    color:white;
+    font-size:60px;
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.character-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:40px;
+    justify-items:center;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.characters{
+    padding:80px 5%;
+}
+
+.characters h1{
+    font-size:50px;
+}
+
+.character-grid{
+    gap:30px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.characters{
+    padding:70px 20px;
+}
+
+.characters h1{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.character-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+}

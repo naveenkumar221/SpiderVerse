@@ -1,0 +1,184 @@
+.hero{
+height:100vh;
+position:relative;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.6);
+z-index:-1;
+}
+
+.hero-content{
+text-align:center;
+color:white;
+width:80%;
+}
+
+.hero h1{
+font-size:110px;
+color:#ff1744;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero h2{
+font-size:38px;
+margin-bottom:30px;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.8;
+width:700px;
+max-width:90%;
+margin:auto;
+margin-bottom:40px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:25px;
+}
+
+.watch-btn,
+.more-btn{
+
+padding:16px 40px;
+
+font-size:18px;
+
+border-radius:40px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.watch-btn{
+
+background:#ff1744;
+
+border:none;
+
+color:white;
+
+}
+
+.watch-btn:hover{
+
+transform:translateY(-5px);
+ box-shadow:0 0 25px #ff1744;
+
+}
+
+.more-btn{
+
+background:transparent;
+
+border:2px solid white;
+
+color:white;
+
+}
+
+.more-btn:hover{
+
+background:white;
+
+color:black;
+box-shadow:0 0 20px white;
+
+}
+
+
+
+.spider{
+    position:absolute;
+    top:-15px;
+    left:3%;
+    width:350px;
+    z-index:20;
+    transform-origin:top center;
+    animation:swing 5s ease-in-out infinite;
+}
+
+
+
+
+@keyframes swing{
+    0%{
+        transform:rotate(-12deg);
+    }
+
+    50%{
+        transform:rotate(12deg);
+    }
+
+    100%{
+        transform:rotate(-12deg);
+    }
+}
+
+@media (max-width:768px){
+
+.hero{
+    padding:120px 20px 50px;
+    height:auto;
+    min-height:100vh;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.1;
+}
+
+.hero h2{
+    font-size:32px;
+}
+
+.hero p{
+    width:100%;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.buttons{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.watch-btn,
+.more-btn{
+    width:220px;
+}
+
+.spider{
+    width:90px;
+    top:60px;
+    left:15px;
+}
+
+}

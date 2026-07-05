@@ -1,0 +1,76 @@
+.movies{
+    padding:100px 6%;
+    background:#050505;
+}
+
+.movies h1{
+    color:white;
+    font-size:60px;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.swiper{
+    width:100%;
+    padding:20px 50px 70px;
+}
+
+.swiper-slide{
+    display:flex;
+    justify-content:center;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color:#ff1744;
+}
+
+.swiper-pagination-bullet{
+    background:#fff;
+}
+
+.swiper-pagination-bullet-active{
+    background:#ff1744;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.movies{
+    padding:80px 20px;
+}
+
+.movies h1{
+    font-size:48px;
+}
+
+.swiper{
+    padding:20px 30px 60px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.movies{
+    padding:60px 15px;
+}
+
+.movies h1{
+    font-size:38px;
+    margin-bottom:30px;
+}
+
+.swiper{
+    padding:10px 5px 50px;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    display:none;
+}
+
+}

@@ -1,0 +1,45 @@
+.top-btn{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #ff1744;
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+
+    cursor: pointer;
+    z-index: 999;
+
+    box-shadow: 0 0 20px rgba(255,23,68,.5);
+    transition: .3s;
+}
+
+.top-btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #ff1744;
+}
+
+@media(max-width:768px){
+
+.top-btn{
+    width:45px;
+    height:45px;
+    right:20px;
+    bottom:20px;
+    font-size:22px;
+}
+
+}

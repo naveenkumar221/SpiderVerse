@@ -1,0 +1,18 @@
+.villains {
+  background: #050505;
+  padding: 100px;
+}
+
+.villains h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.villain-grid {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}

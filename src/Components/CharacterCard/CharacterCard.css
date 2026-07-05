@@ -1,0 +1,61 @@
+.character-card{
+    width:260px;
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.character-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(255,23,68,.4);
+     transform:scale(1.08);
+}
+
+.character-card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.character-info{
+    padding:18px;
+    text-align:center;
+}
+
+.character-info h2{
+    color:white;
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.actor{
+    color:#bdbdbd;
+    font-size:16px;
+    margin-bottom:8px;
+}
+
+.character-info span{
+    color:#ff1744;
+    font-size:16px;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+.character-card{
+    width:220px;
+}
+
+.character-card img{
+    height:300px;
+}
+
+.character-info h2{
+    font-size:22px;
+}
+
+}
