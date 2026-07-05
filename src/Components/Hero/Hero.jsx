@@ -19,7 +19,7 @@ function Hero() {
         loop
         playsInline
       >
-        <source src="/videos/hero1.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/piobqzyd/video/upload/v1783241005/hero1_epkpyq.mp4" type="video/mp4" />
       </video>
 
       <div className="overlay"></div>

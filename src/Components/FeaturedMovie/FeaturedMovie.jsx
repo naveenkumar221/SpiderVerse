@@ -46,7 +46,7 @@ trailer, news, and updates from the SpiderVerse.
           loop
           playsInline
         >
-          <source src="/videos/new1.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/piobqzyd/video/upload/v1783240034/new1_avvdam.mp4" type="video/mp4" />
         </video>
       </motion.div>
 
